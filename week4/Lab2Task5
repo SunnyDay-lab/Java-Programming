@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Lab2Task5 {
+    public static void main(String[] args){
+        double subtotal,gratuity,sum;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the subtotal: ");
+        subtotal =input.nextDouble();
+
+        System.out.print("Enter the gratuity");
+        gratuity = input.nextDouble();
+
+        sum = subtotal +subtotal*gratuity/100;
+
+        System.out.println("The gratuity is: $"+gratuity+" and the total is $"+sum);
+    }
+}
