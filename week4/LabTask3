@@ -1,0 +1,10 @@
+public class LabTask3 {
+    public static void main(String[] args){
+        int today = 2;
+        int time = 100;
+
+        int after = today + time%7;
+
+        System.out.println("today is: "+after);
+    }
+}
