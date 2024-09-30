@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Lab2Task4 {
+    public static void main(String[] qrgs){
+        double area,radius,volume,length,pi=3.1415926;
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the radius: ");
+        radius = input.nextInt();
+
+        System.out.print("Enter the length: ");
+        length = input.nextInt();
+
+        area = radius * radius * pi;
+        volume = area * length;
+
+        System.out.println("The area is: " +area);
+        System.out.println("The volume is: " +volume);
+    }
+}
