@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Lab2Task12 {
+    public static void main(String[] args)
+    {
+        int n;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        n = input.nextInt();
+
+        if(n%5 == 0){
+            System.out.println("HiFive");
+        }
+        if(n%2 == 0){
+            System.out.println("HiEven");
+        }
+
+    }
+}
