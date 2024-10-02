@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class LabTask8 {
+    public static void main(String[] args){
+        double s,area;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the length of the side: ");
+        s = input.nextDouble();
+
+        area = 3 * Math.sqrt(3) / 2 * s * s;
+
+        System.out.println("The area of the hexagon is: "+area);
+    }
+}
