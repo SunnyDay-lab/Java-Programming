@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Lab2Task9 {
+    public static void main(String[] args){
+        double money,sum;
+        int i,n;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the saving monthes: ");
+        n = input.nextInt();
+
+        System.out.print("Enter the monthly saving amount: ");
+        money = input.nextDouble();
+        sum = money;
+
+        for(i=1;i<n;i++){
+            sum = (sum + money) * (1 + 0.05 / 12);
+        }
+
+        System.out.println("account value is $"+sum);
+    }
+}
