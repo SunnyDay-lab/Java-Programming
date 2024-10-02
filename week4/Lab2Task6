@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Lab2Task6 {
+    public static void main(String[] args){
+        double kilograms,meters,pound,inch,BMI;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter weight in pounds: ");
+        pound = input.nextDouble();
+
+        System.out.print("Enter height in inches: ");
+        inch = input.nextDouble();
+
+        kilograms = pound * 0.45359237;
+        meters = inch * 0.0254;
+
+        BMI = kilograms / meters / meters;
+
+        System.out.println("Your BIM is: "+BMI);
+
+
+    }
+}
