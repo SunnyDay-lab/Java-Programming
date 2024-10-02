@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.Random;
+public class Lab2Task19 {
+    public static void main(String[] args){
+        int number1,number2,number,answer;
+
+        Random random = new Random();
+        number1 = random.nextInt(9);
+        number2 = random.nextInt(9);
+
+        System.out.println("What is "+number1+" + "+number2);
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your answer");
+        number = input.nextInt();
+
+        answer = number1 + number2;
+
+        if(number == answer){
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }
+    }
+}
