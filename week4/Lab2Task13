@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Lab2Task13 {
+    public static void main(String[] args){
+        int score;
+        double statement =10000;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the score: ");
+        score = input.nextInt();
+
+        if(score > 90){
+            statement = statement * (1+0.03);
+        }
+        else
+        {
+            statement = statement * (1+0.01);
+        }
+        System.out.println("The statement is: "+statement);
+    }
+}
