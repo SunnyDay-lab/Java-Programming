@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Lav2Task9 {
+    public static void main(String[] args){
+        double money,sum;
+        int i;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the monthly saving amount: ");
+        money = input.nextDouble();
+        sum = money;
+
+        for(i=1;i<6;i++){
+            sum = (sum + money) * (1 + 0.05 / 12);
+        }
+
+        System.out.println("After the sixth month the account value is $"+sum);
+    }
+}
